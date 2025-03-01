@@ -77,7 +77,7 @@ function App() {
     
     setIsTranslating(true);
     try {
-      const response = await fetch('http://192.168.0.102:5000/api/translate', {
+      const response = await fetch('https://model-microserve.onrender.com/api/translate', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
